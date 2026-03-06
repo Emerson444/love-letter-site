@@ -1,6 +1,10 @@
 body{
     background-color: #1E1F23;
     color: aliceblue;
+    max-width: 100%;
+    overflow-x: hidden; /* Isso corta qualquer coisa que tente sair pelo lado */
+    margin: 0;
+    padding: 0;
 }
 
 
