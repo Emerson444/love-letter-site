@@ -1,4 +1,4 @@
-const dataInicial = new Date("2021-11-11");
+const dataInicial = new Date("2025-07-27");
 
 function atualizarContador() {
     const hoje = new Date();
