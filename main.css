@@ -7,4 +7,16 @@ body{
     padding: 0;
 }
 
+#contador{
+    font-weight: bold;
+    animation: rgbColor 5s infinite;
+}
+
+@keyframes rgbColor{
+    0% { color: rgb(255, 0, 0); }
+    25% { color: rgb(0, 255, 0); }
+    50% { color: rgb(0, 0, 255); }
+    75% { color: rgb(255, 0, 255); }
+    100% { color: rgb(255, 0, 0); }
+}
 
