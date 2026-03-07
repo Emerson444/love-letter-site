@@ -51,7 +51,7 @@ animation: piscar 1s infinite;
 }
 
 #playBtn, #nextBtn{
-  position: fixed;
+  position: absolute;
   top: 20px;
   right: 20px;
   background: #f63558;

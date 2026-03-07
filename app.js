@@ -56,9 +56,9 @@ function escrever() {
 escrever();
 
 let playlist = [
-  "musica1.mp3",
-  "musica2.mp3",
-  "musica3.mp3"
+  "assets/audios/music1.mp3",
+  "assets/audios/music2.mp3",
+  "assets/audios/music3.mp3"
 ];
 
 let indice = 0;
