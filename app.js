@@ -54,3 +54,56 @@ function escrever() {
 }
 
 escrever();
+
+let playlist = [
+  "musica1.mp3",
+  "musica2.mp3",
+  "musica3.mp3"
+];
+
+let indice = 0;
+
+let player = document.getElementById("player");
+let playBtn = document.getElementById("playBtn");
+let nextBtn = document.getElementById("nextBtn");
+
+function tocar(){
+  player.src = playlist[indice];
+  player.play();
+}
+
+playBtn.addEventListener("click", function(){
+
+  if(player.paused){
+    tocar();
+    playBtn.innerHTML = "⏸";
+  }else{
+    player.pause();
+    playBtn.innerHTML = "▶️";
+  }
+
+});
+
+nextBtn.addEventListener("click", function(){
+
+  indice++;
+
+  if(indice >= playlist.length){
+    indice = 0;
+  }
+
+  tocar();
+
+});
+
+player.addEventListener("ended", function(){
+
+  indice++;
+
+  if(indice >= playlist.length){
+    indice = 0;
+  }
+
+  tocar();
+
+});
