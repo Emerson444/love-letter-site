@@ -19,3 +19,38 @@ function atualizarContador() {
 }
 
 atualizarContador();
+
+
+
+const linhas = [
+"Meu amor, feliz dia das mulheres. Você é uma mulher incrível, forte, linda e que faz meus dias muito mais felizes só por estar na minha vida.",
+"Sou muito grato por ter você comigo. Seu jeito, seu carinho e sua companhia significam muito pra mim.",
+"Feliz Dia das Mulheres, meu amor. Te amo demais, Mira ❤️"
+];
+
+let linhaIndex = 0;
+let letraIndex = 0;
+
+function escrever() {
+
+    if (linhaIndex < linhas.length) {
+
+        if (letraIndex < linhas[linhaIndex].length) {
+
+            document.getElementById("typewriter").innerHTML += linhas[linhaIndex].charAt(letraIndex);
+            letraIndex++;
+            setTimeout(escrever, 40);
+
+        } else {
+
+            document.getElementById("typewriter").innerHTML += "<br><br>";
+            linhaIndex++;
+            letraIndex = 0;
+
+            setTimeout(escrever, 800);
+        }
+
+    }
+}
+
+escrever();
